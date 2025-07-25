@@ -1,0 +1,14 @@
+train_dataset, val_dataset, test_dataset = StringDataset.create_datasets(r'C:\Users\Henry\PycharmProjects\Machine Learning\Languages\Datasets\dyck_k_5_regular.npy', 10, 1, 1)
+generalisation_datasets = {
+    "Dyck_k_5(50)": r'C:\Users\Henry\PycharmProjects\Machine Learning\Languages\Datasets\dyck_k_5_generalisation_50.npy',
+    "Dyck_k_5(100)": r'C:\Users\Henry\PycharmProjects\Machine Learning\Languages\Datasets\dyck_k_5_generalisation_100.npy',
+    "Dyck_k_5(250)": r'C:\Users\Henry\PycharmProjects\Machine Learning\Languages\Datasets\dyck_k_5_generalisation_250.npy',
+    "Dyck_k_5(500)": r'C:\Users\Henry\PycharmProjects\Machine Learning\Languages\Datasets\dyck_k_5_generalisation_500.npy',
+}
+potential_hyperparameters = {
+    "embedding_dim": [16, 32, 64],
+    "num_rnn_layers": [1, 2, 4],
+    "rnn_hidden_dim": [16, 32, 64],
+    "num_mlp_layers": [1, 2, 4],
+    "mlp_hidden_size": [16, 32, 64],
+}

@@ -1,0 +1,56 @@
+{
+  "Models Data": [
+    {
+      "Model Name": null,
+      "Model Type": "TransformerEncoder",
+
+      "Model Args": {
+        "max_sequence_length": 501,
+        "embedding_dim": 32,
+        "num_encoder_layers": 4,
+        "num_encoder_heads": 4,
+        "dim_encoder_feedforward": 256,
+        "num_ffnn_layers": 1,
+        "ffnn_hidden_dim": 16
+      },
+
+      "Training Args": {
+        "Num Epochs": 3,
+        "Batch Size": 1024,
+        "Learning Rate": 1e-5,
+        "Weight Decay": 0
+      }
+    },
+
+    {
+      "Model Name": "Model 2",
+      "Model Type": "TransformerEncoder",
+
+      "Model Args": {
+        "max_sequence_length": 501,
+        "embedding_dim": 32,
+        "num_encoder_layers": 4,
+        "num_encoder_heads": 4,
+        "dim_encoder_feedforward": 256,
+        "num_ffnn_layers": 1,
+        "ffnn_hidden_dim": 16
+      },
+
+      "Training Args": {
+        "Num Epochs": 3,
+        "Batch Size": 1024,
+        "Learning Rate": 1e-5,
+        "Weight Decay": 0
+      }
+    }
+  ],
+
+  "Training Dataset": "Test Dataset",
+  "Test Datasets": [
+    "Memory Copy 5 len 50"
+  ],
+
+  "Test Batch Size": 32,
+
+  "Experiment Name": "Test Experiment"
+}

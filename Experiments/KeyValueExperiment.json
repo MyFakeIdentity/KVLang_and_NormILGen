@@ -1,0 +1,99 @@
+{
+  "Models Data": [
+    {
+      "Model Name": null,
+      "Model Type": "RNN",
+
+      "Model Args": {
+        "embedding_dim": 32,
+        "num_rnn_layers": 2,
+        "rnn_hidden_dim": 64,
+        "num_mlp_layers": 1,
+        "mlp_hidden_size": 16
+      },
+
+      "Training Args": {
+        "Num Epochs": 75,
+        "Batch Size": 1024,
+        "Learning Rate": 1e-4,
+        "Weight Decay": 0
+      }
+    },
+
+    {
+      "Model Name": null,
+      "Model Type": "LSTM",
+
+      "Model Args": {
+        "embedding_dim": 32,
+        "num_lstm_layers": 2,
+        "lstm_hidden_size": 64,
+        "num_mlp_layers": 1,
+        "mlp_hidden_size": 16
+      },
+
+      "Training Args": {
+        "Num Epochs": 75,
+        "Batch Size": 1024,
+        "Learning Rate": 1e-4,
+        "Weight Decay": 0
+      }
+    },
+
+    {
+      "Model Name": "SSM",
+      "Model Type": "Mamba",
+
+      "Model Args": {
+        "embedding_dim": 16,
+        "d_model": 16,
+        "num_layers": 3,
+        "d_state": 8,
+        "expand_factor": 2,
+        "d_conv": 4
+      },
+
+      "Training Args": {
+        "Num Epochs": 60,
+        "Batch Size": 1024,
+        "Learning Rate": 1e-4,
+        "Weight Decay": 0
+      }
+    },
+
+    {
+      "Model Name": null,
+      "Model Type": "TransformerEncoder",
+
+      "Model Args": {
+        "max_sequence_length": 256,
+        "embedding_dim": 64,
+        "num_encoder_layers": 8,
+        "num_encoder_heads": 8,
+        "dim_encoder_feedforward": 512,
+        "num_ffnn_layers": 1,
+        "ffnn_hidden_dim": 16
+      },
+
+      "Training Args": {
+        "Num Epochs": 30,
+        "Batch Size": 1024,
+        "Learning Rate": 1e-4,
+        "Weight Decay": 0
+      }
+    }
+  ],
+
+  "Load From": [
+  ],
+
+  "Training Dataset": "Key-Value Bin 8_1 len 50",
+  "Test Datasets": [
+    "Key-Value Bin 8_1 len 100",
+    "Key-Value Bin 8_1 len 250"
+  ],
+
+  "Test Batch Size": 32,
+
+  "Experiment Name": "Key(4)-Value(2) Language"
+}
